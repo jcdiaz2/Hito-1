@@ -59,21 +59,11 @@ Acciones nominativas: el Banco de Chile posee este tipo de acciones, las cuales 
 
 Acciones fuera de Chile: también es importante recalcar que desde el 2 de enero del 2002 las acciones del Banco de Chile se transan en la Bolsa de Valores de Nueva York en el programa de American Depositary Receips (ADR). Donde cada ADR representan 200 acciones comunes. (*Banco De Chile*, 2022)
 
-Describir el activo especificando en que realiza sus inversiones (por tipo de instrumento). Especificar sus acciones comunes, preferentes y bonos relacionados aplicando lo aprendido en el capitulo respectivo.
-
-Ejemplo de un fondo mutuo como activo a analizar:
-
-![](photos/Captura%20de%20pantalla%202023-08-22%20112340.png){fig-align="center"}
-
 #### Caracterización de emisiones históricas (Aplicación cap. 20)
 
 Sobre la emisión de acciones como tal se destaca lo dicho anteriormente, estas 101.017.081.114 acciones nominativas, las cuales van en aumento, dado que cada año se van emitiendo más acciones del banco,
 
 Sobre la emisión de bonos, se destacan varios, como se menciono en la parte de caracterización de la deuda, sin embargo, entrando en actualidad se puede destacar uno que se emitió en México, en donde se emitió un bono por US\$40 millones para financiar proyectos liderados por mujeres (*Banco De Chile Emite Bono Por US\$ 40 Millones Para Financiar Emprendimientos Liderados Por Mujeres*, 2023) por poner algún ejemplo más actual.
-
-Describir el proceso de emision de acciones paso a paso del activo seleccionado, caracterizando el tipo de colocacion que utilizaron en contraste con el procedimiento basico realizado en el capitulo respectivo.
-
-![](photos/Captura%20de%20pantalla%202023-08-22%20111527.png){fig-align="center"}
 
 #### Relación con activos derivados
 
@@ -98,7 +88,21 @@ Tabla 1: Monto Nacional de contratos con vencimiento final
 
 ### Reporte grupal
 
-Definicion de un balance de portafolio sobre los 3 activos del grupo, donde se especifique los pesos de cada activo de tal forma que maximize el retorno de la cartera.
+Para el reporte grupal se observaron los rendimientos de cada uno de los activos, aparte de sus rendimientos y se asignaron los porcentajes a invertir en el portafolio.
+
+|                | Betas | Rentabilidad | Porcentaje |
+|----------------|-------|--------------|------------|
+| Banco de Chile | 0,14  | 0,1549       | 0,2        |
+| Enel           | 0,72  | 0,5498       | 0,5        |
+| Parque Arauco  | 0,95  | 0,17778      | 0,3        |
+
+Dado los valores de los rendimientos, se decidió invertir más en Enel, dado que es una empresa que genera muchos ingresos, dado que es una empresa muy grande, global y atractiva dado que invierte en energía renovable, sin embargo, esta el riesgo a que sea más regulada por el paso de los años.
+
+Para el caso del Parque Arauco, se ve que es el segundo con mayor rentabilidad, pero tiene una alta variabilidad con el mercado, esto dado por últimos eventos mundiales como el COVID y otros que han renderizado la construcción, además de la inflación que ha vivido chile en específico que hace haya caído esta rentabilidad y haya una mayor variabilidad.
+
+Por último, está el Banco de Chile, que es el que tiene menor rentabilidad y beta, esto se debe a gran medida porque son altamente regulados por el estado, sin embargo, el invertir en este sector da estabilidad, harta diversificación, entre otros.
+
+Se puede ver que es necesario que el portafolio este diversificado entre los distintos activos, de esta manera no va a perder valor si está todo invertido en uno.
 
 ### Referencias
 
