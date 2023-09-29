@@ -1,7 +1,7 @@
 ---
 title: "Hito 1"
 author: "Juan Carlos Díaz"
-format: html
+format: pdf
 editor: visual
 ---
 
