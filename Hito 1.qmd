@@ -1,13 +1,9 @@
 ---
-title: "Hito 1"
+title: "Hito 3"
 author: "Juan Carlos Díaz"
 format: pdf
 editor: visual
 ---
-
-## Descripción Activo y Contexto (Hito 1)
-
-Fecha de entrega: Jueves 28 de Septiembre 23:59.
 
 ### Definición
 
@@ -104,8 +100,10 @@ Por último, está el Banco de Chile, que es el que tiene menor rentabilidad y b
 
 Se puede ver que es necesario que el portafolio este diversificado entre los distintos activos, de esta manera no va a perder valor si está todo invertido en uno.
 
-##Hito 2
-Juan Carlos Díaz
+# Hito 2
+
+# Para mejor comprensión de esta parte, se recomienda abrir el colab adjunto en la entrega
+
 Conectar con la api
 Primero se muesta como conecta para obtener los valores reales, que posteriormente se utilizarán en los modelos
 
@@ -149,7 +147,6 @@ stock_data = yf.download(symbol, start=start_date, end=end_date)
 # Obtener el precio actual
 current_price = stock_data['Adj Close'][-1]
 print(f"El precio de actual de una acción del Banco de Chile es: {current_price}")
-
 
 #obtener la fecha de vencimiento
 from datetime import datetime
@@ -205,18 +202,8 @@ Volatilidad histórica del Banco de Chile: 0.3291
 [*********************100%%**********************]  1 of 1 completed
 Tasa de interés libre de riesgo compuesta continuamente: 0.9721
 El S0 será:19.530000686645508
-Valoración opciones aplicada
-Tome en consideración el modelo continuio de Black and Scholes:
 
-donde 
- 
- 
- 
- y 
-.
-
-Mediante los datos actuales descargados anteriormente, se tiene lo siguiente.
-
+# Modelo Black and Scholes
 
 import numpy as np
 from scipy.stats import norm
@@ -266,7 +253,8 @@ print(f'El precio teórico de la opción de venta es: {put_option_price}')
      
 El precio teórico de la opción de compra es: 5.015983214096131
 El precio teórico de la opción de venta es: 0.04460042354522198
-Modelo Binominal
+
+# Modelo Binominal
 Corresponde a un modelo para valorar opciones financieras, al igual que el Black and Scholes. Pero este modelo se basa en la teoría de las opciones reales, se desarrolla en un ambiente neutral al riesgo, por lo que es posible valorar las opciones en flujos de fondos esperados, actualizados y suponiendo que los flujos crecen a tasa libre de riesgo. (El Modelo Binomial, n.d.)
 
 La idea de este modelo esta en que el precio del activo (en este caso la acción), puede subir o bajar en un periodo de tiempo, por lo que es un modelo eficiente para calcular el precio de la opción en cada punto del tiempo.
@@ -343,7 +331,8 @@ call_option_price = binomial_option_pricing(S0, K, T, r, sigma, n, option_type='
 print(f'El precio teórico de la opción de compra es: {call_option_price}')
      
 El precio teórico de la opción de compra es: 5.01510263832148
-Análisis
+
+# Análisis
 Se puede observar que los 2 modelos cumplen la función de calcular el precio de compra o venta de una opción, uno tiene un enfoque más actualizado de los valores como es el binomial y el otro más global.
 
 Tienen similitudes más que nada en terminos de las variables, en ambos se utiliza el S0 (precio actual activo), el K (precio de ejercicio), el r (tasa de interés), sigma (volatilidad del activo) y t (tiempo de expiración). De hecho, dado que las variables son tan similares se es fácil el calculo del binomial, dado que ya se habían obtenido los valores reales con anterioridad.
@@ -354,10 +343,11 @@ De acuerdo a los valores el Black and Scholes entrega un 5,0159 y el Binomial un
 
 Por eso, no hay un argumento fuerte en cual es mejor, más que nada ver si se necesita una mayor presición o no.
 
-Trabajo Grupal
+# Trabajo Grupal
+
 Para esta parte, se desarrollo el caso de Braam Industries, que se encuentra en la página 874 del ROSS, la cual trata de administración de efectivo. Los resultados a las preguntas del caso, se muestran en la siguiente foto:
 
-WhatsApp Image 2023-10-26 at 17.51.04.jpeg
+# Ver imagen en colab
 
 Primero se deben poner las 3 opciones, las cuales fueron elegidas en el hito 1, son Banco de Chile, Enel y Parque Arauco.
 
@@ -386,3 +376,7 @@ Cohn, A., Fehr, E., & Maréchal, M. A. (2014). Business culture and dishonesty i
 Quinto, C. (2023, September 12). Mejores bancos de Chile 2023 - Rankia. Rankia Chile. Retrieved September 28, 2023, from https://www.rankia.cl/blog/mejores-depositos-a-plazo/3097703-mejores-bancos-chile
 
 SANTIAGOX. (n.d.). SANTIAGOX. Retrieved September 28, 2023, from https://www.bolsadesantiago.com/resumen_instrumento/CHILE
+
+El modelo binomial. (n.d.). oikonomicon. Retrieved October 26, 2023, from https://oikonomicon.udc.es/el_modelo_binomial.html
+
+(n.d.). CAPITULO IV. MODELO BINOMIAL. Retrieved October 26, 2023, from http://catarina.udlap.mx/u_dl_a/tales/documentos/lat/chanona_r_ma/capitulo4.pdf
